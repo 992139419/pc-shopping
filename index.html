@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/fixed.css"><!--左侧边栏-->
     <script type="text/javascript" src="js/left-aside.js"></script>
+    <script type="text/javascript" src="lib/WOW/wow.js"></script>
 </head>
 <body style="background-color: #eee;">
     <div id="box">
@@ -615,7 +616,7 @@
                     </div><!-- ads -->
                     <!-- 右侧图片及服务 -->
                     <div class="ads-right col-lg-2 col-md-2 col-sm-3 col-xs-4">
-                        <div>
+                        <div class="right-big-img">
                             <img src="" alt="">
                         </div>
                         <!-- 各个服务 -->
@@ -1387,7 +1388,14 @@
             <p>返回顶部</p>
         </div>
     </div>
+    
     <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("content img").addClass('wow bounceIn');
+            new WOW().init();
+        })
+    </script>
     <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/header.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
@@ -1395,6 +1403,6 @@
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/content_scareBuying.js"></script>
     <script type="text/javascript" src="js/find-good.js"></script>
-
+    
 </body>
 </html>
