@@ -13,14 +13,14 @@ $(function(){
         // $('#ads .scroll-ads ul').append(li);
 
         // $('#ads .scroll-ads ul img')[index].src = val;
-        $('#carousel-example-generic .carousel-inner img').eq(index).attr("src",val);
+        $('#carousel-example-generic .carousel-inner img')[index].src = val;
     });
     $.each(adsBottom,function(index, val) {
         // var img = $('<img src='+val+'>');
         // var li = $('<li></li>');
         // li.append(img);
         // $('#ads .ads-bottom ul').append(li);
-        $('#ads .ads-bottom ul img').eq(index).attr("src",val);
+        $('#ads .ads-bottom ul img')[index].src = val;
     });
     // ads触摸
     $('#carousel-example-generic').on('mouseover',function(){
@@ -33,7 +33,7 @@ $(function(){
         // $('#carousel-example-generic .right').hide();
     });
     // 右侧图片及服务
-    $('.ads-right .right-big-img img').eq(0).attr("src","./images/ads/ads-right.jpg");
+    $('.ads-right .right-big-img img')[0].src="./images/ads/ads-right.jpg";
     $('.ads-right .right-big-img img').eq(0).css({'width':'100%','height':310});
     var txt=["话费","机票","酒店","游戏","企业购","加油卡","电影票","火车票","众筹","理财","礼品卡","白条"];
     for (var i = 0; i < txt.length; i++) {
